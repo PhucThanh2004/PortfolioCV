@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-sand-200 font-sans text-denim-800 antialiased selection:bg-denim-500 selection:text-sand-100; }
+}
+@layer components {
+  .font-condensed { @apply font-display uppercase; letter-spacing: -0.01em; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
